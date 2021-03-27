@@ -119,8 +119,8 @@ end)
 RegisterNetEvent('esxbalkan_mafije:staviUVozilo')
 AddEventHandler('esxbalkan_mafije:staviUVozilo', function(target)
 	local xPlayer = ESX.GetPlayerFromId(source)
-		TriggerClientEvent('esxbalkan_mafije:staviUVozilo', target)
 	if xPlayer.job.name == 'ballas' or xPlayer.job.name == 'camorra' or xPlayer.job.name == 'favela' or xPlayer.job.name == 'gsf' or xPlayer.job.name == 'juzniv' or xPlayer.job.name == 'lazarevacki' or xPlayer.job.name == 'lcn' or xPlayer.job.name == 'ludisrbi' or xPlayer.job.name == 'peaky' or xPlayer.job.name == 'stikla' or xPlayer.job.name == 'vagos' or xPlayer.job.name == 'yakuza' or xPlayer.job.name == 'zemunski' then
+		TriggerClientEvent('esxbalkan_mafije:staviUVozilo', target)
 	else
 		DropPlayer(source, 'Zasto pokusavas da citujes. Nije lepo to :)')
 	end
@@ -129,8 +129,8 @@ end)
 RegisterNetEvent('esxbalkan_mafije:staviVanVozila')
 AddEventHandler('esxbalkan_mafije:staviVanVozila', function(target)
 	local xPlayer = ESX.GetPlayerFromId(source)
+	if xPlayer.job.name == 'ballas' or xPlayer.job.name == 'camorra' or xPlayer.job.name == 'favela' or xPlayer.job.name == 'gsf' or xPlayer.job.name == 'juzniv' or xPlayer.job.name == 'lazarevacki' or xPlayer.job.name == 'lcn' or xPlayer.job.name == 'ludisrbi' or xPlayer.job.name == 'peaky' or xPlayer.job.name == 'stikla' or xPlayer.job.name == 'vagos' or xPlayer.job.name == 'yakuza' or xPlayer.job.name == 'zemunski' then
 		TriggerClientEvent('esxbalkan_mafije:staviVanVozila', target)
-		if xPlayer.job.name == 'ballas' or xPlayer.job.name == 'camorra' or xPlayer.job.name == 'favela' or xPlayer.job.name == 'gsf' or xPlayer.job.name == 'juzniv' or xPlayer.job.name == 'lazarevacki' or xPlayer.job.name == 'lcn' or xPlayer.job.name == 'ludisrbi' or xPlayer.job.name == 'peaky' or xPlayer.job.name == 'stikla' or xPlayer.job.name == 'vagos' or xPlayer.job.name == 'yakuza' or xPlayer.job.name == 'zemunski' then
 	else
 		DropPlayer(source, 'Zasto pokusavas da citujes. Nije lepo to :)')
 	end
